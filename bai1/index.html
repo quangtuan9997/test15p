@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    nhập tuổi em:<input id="tuoiEm" type="text" oninput="tinh()">
+</label>
+<p id="tuoiAnh"></p>
+<p id="tuoiBo"></p>
+<script>
+    function tinh(){
+        let a=+document.getElementById('tuoiEm').value,
+           b=a+3,
+            c=6*b;
+        document.getElementById('tuoiAnh').innerHTML='tuoi anh la:  '+b;
+        document.getElementById('tuoiBo').innerHTML='tuoi bo la:  ' +c;
+    }
+</script>
+</body>
+</html>
